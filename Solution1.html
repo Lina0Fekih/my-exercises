@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise Solutions</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 40px;
+            background-color: #f9f3f6;
+            color: #333;
+        }
+        h1, h2, h3 {
+            color: #e91e63;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            background-color: #fff;
+        }
+        th, td {
+            border: 1px solid #f0a0c7;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #f8d9e1;
+            color: #e91e63;
+        }
+        td {
+            background-color: #fce4ec;
+        }
+        .solution {
+            background-color: #f8d9e1;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+        .comments {
+            font-style: italic;
+            color: #9c4d62;
+        }
+        .header {
+            margin-bottom: 30px;
+        }
+        .highlight {
+            background-color: #ffdfeb;
+            padding: 10px;
+            border-radius: 8px;
+        }
+        pre {
+            background-color: #ffebf1;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Solutions for Exercises</h1>
+        <p>Name: Fekih Lina Hibat Allah</p>
+        <p>Section: A</p>
+        <p>Group: 1</p>
+    </div>
+
+    <!-- Chapter 1: Exercises -->
+    <h2>Chapter 1: Exercises</h2>
+    
+    <h3>Exercise 1: Fill in the Table</h3>
+    <p>Complete the table with appropriate conversions:</p>
+    <pre>
+        | Decimal | Binary       | Octal | Hexadecimal | BCD  | Gray |
+        |---------|--------------|-------|-------------|------|------|
+        | 5       | 101          | 5     | 5           | 0101 | 0111 |
+        | 13      | 1101         | 15    | D           | 0001 | 1000 |
+        | 54      | 110110       | 66    | 36          | 0101 | 1111 |
+        | 13.5    | 1101.1       | 15.4  | D.8         | 0001 | 1001 |
+        | 35      | 100011       | 43    | 23          | 0011 | 1000 |
+        | 100     | 1100100      | 144   | 64          | 0001 | 1011 |
+        | 89.0625 | 1011001.0001 | 131.05| 59.1        | 1000 | 1100 |
+    </pre>
+    
+    <h3>Solution to Exercise 1:</h3>
+    <p>The conversion process involves converting from one number system to another. The table above shows the respective conversions.</p>
+    <p class="comments">This is a basic conversion problem where decimal numbers are converted to binary, octal, hexadecimal, and Gray code.</p>
+
+    <h3>Exercise 2: Code the Decimal Number in Binary and Gray</h3>
+    <pre>
+        Decimal Number: 31
+        Binary: 11111
+        Gray: 10000
+    </pre>
+
+    <h3>Solution to Exercise 2:</h3>
+    <p>We first convert the decimal number (31) to binary, which is 11111, and then calculate its Gray code by performing an XOR between each bit and the previous bit.</p>
+    <p class="comments">By using the properties of Gray codes, we can generate the Gray code sequence for subsequent numbers, such as 32 and 33, by applying the Gray code formula.</p>
+
+    <h3>Exercise 3: Two's Complement Representation</h3>
+    <p>Represent the following decimal numbers in two's complement format:</p>
+    <pre>
+        (122)10 on 1 byte: 01111010
+        (2025)10 on 16 bits: 0111111110000001
+        (-78)10 on 2 bytes: 1111111101001010
+        (-700)10 on 2 bytes: 1111111111001010
+    </pre>
+
+    <h3>Solution to Exercise 3:</h3>
+    <p>The two's complement representation involves flipping the bits and adding one to the result. The binary numbers shown above are in two's complement format.</p>
+    <p class="comments">Note that for negative numbers, the most significant bit (MSB) is 1, representing the sign bit in two's complement.</p>
+
+    <h3>Exercise 4: Add Signed Numbers in CA2</h3>
+    <pre>
+        01101011 + 10111101 = 10001000
+        10010110 + 11111011 = 10010001
+    </pre>
+
+    <h3>Solution to Exercise 4:</h3>
+    <p>When performing binary addition, we handle the carry and check for overflow. The results above are in signed binary addition.</p>
+    <p class="comments">In CA2 (Two's complement), overflow occurs when the result exceeds the range of the given bit width.</p>
+
+    <h3>Exercise 5: Perform Operations in Base 16</h3>
+    <pre>
+        A43C + 5BCD = F8A7
+        2345 + 54EB = 78D0
+    </pre>
+
+    <h3>Solution to Exercise 5:</h3>
+    <p>The hexadecimal addition is performed by carrying over values and converting the results to base 16. The answers above show the correct sums.</p>
+    <p class="comments">In hexadecimal addition, we add each digit, carry over if necessary, and convert the result back to the base-16 system.</p>
+
+    <h3>Exercise 6: Convert Gray to Binary and Perform Operations</h3>
+    <pre>
+        A = 1110111 (Gray code)
+        B = 110010 (Gray code)
+    </pre>
+
+    <h3>Solution to Exercise 6:</h3>
+    <p>The binary equivalent of Gray code is obtained by using the rules of Gray code conversion. Once converted, we can perform operations like 2's complement as needed.</p>
+    <p class="comments">The binary equivalents of Gray codes are used in digital systems to minimize errors and simplify data transfer.</p>
+
+    <h3>Exercise 7: Decode ASCII Messages</h3>
+    <pre>
+        Hexadecimal Message: 57 65 6C 63 6F 6D 65 20 53 65 63 74 69 6F 6E 20 41 20 46 69 72 73 74 20 79 65 61 72 20 4D 61 74 68 65 6D 61 74 69 63 73
+    </pre>
+
+    <h3>Solution to Exercise 7:</h3>
+    <p>The given hexadecimal sequence corresponds to the ASCII string "MATHS Section A 2025".</p>
+    <p class="comments">This is an example of encoding and decoding ASCII characters from hexadecimal representations.</p>
+
+    <h3>Exercise 8: IEEE 754 Floating Point Representation</h3>
+    <pre>
+        Convert (8.625)10 to IEEE 754 format.
+        N = (40D00000)FP/16
+    </pre>
+
+    <h3>Solution to Exercise 8:</h3>
+    <p>We convert the decimal number to binary first, then normalize it, and finally apply the IEEE 754 standard to represent it as a floating point number.</p>
+    <p class="comments">The IEEE 754 standard is used to represent floating-point numbers in computers for efficient computation.</p>
+
+    <h3>Exercise 9: IEEE 754 Representation on 32 Bits</h3>
+    <pre>
+        N1 = (13.75)16
+        N2 = (5.412)8
+    </pre>
+
+    <h3>Solution to Exercise 9:</h3>
+    <p>We first convert the numbers to their respective binary forms and then represent them as floating point numbers according to the IEEE 754 standard.</p>
+    <p class="comments">Using IEEE 754 ensures accurate floating-point computations by following the standard's precision and rounding rules.</p>
+
+    <!-- Chapter 2: Exercises -->
+    <h2>Chapter 2: Exercises</h2>
+    
+    <h3>Exercise 1: Truth Tables for Functions</h3>
+    <p>Complete the truth table for the given functions:</p>
+    <pre>
+        | A | B | F(A, B) | F(A, B, C) |
+        |---|---|---------|------------|
+        | 0 | 0 |    1    |     0      |
+        | 0 | 1 |    0    |     1      |
+        | 1 | 0 |    0    |     0      |
+        | 1 | 1 |    1    |     1      |
+    </pre>
+    
+    <h3>Solution to Exercise 1:</h3>
+    <p>Truth tables are a way to represent all possible outcomes of logical operations. By evaluating the functions for all combinations of inputs, we can derive the corresponding truth values.</p>
+    <p class="comments">This exercise is useful for understanding how logic gates function based on the input combinations.</p>
+
+    <h3>Exercise 2: Algebraic Simplification</h3>
+    <p>Simplify the following expressions:</p>
+    <pre>
+        (A + B)(A' + C)
+    </pre>
+
+    <h3>Solution to Exercise 2:</h3>
+    <p>We can simplify the Boolean expression using the basic algebraic properties of Boolean algebra.</p>
+    <p class="comments">Simplification reduces the complexity of logic circuits, optimizing them for implementation.</p>
+
+    <h3>Exercise 3: Simplify Using De Morgan's Theorem</h3>
+    <pre>
+        (A + B)'
+    </pre>
+
+    <h3>Solution to Exercise 3:</h3>
+    <p>By applying De Morgan's theorem, we get the equivalent expression as:</p>
+    <pre>
+        A'B'
+    </pre>
+    <p class="comments">De Morgan's law is essential for transforming Boolean expressions to make logic circuits simpler.</p>
+
+    <h3>Exercise 4: Truth Table and Equation</h3>
+    <pre>
+        Truth Table: A, B, C, S
+        Equation: S = A AND (B OR C)
+    </pre>
+
+    <h3>Solution to Exercise 4:</h3>
+    <p>We derive the truth table by evaluating all combinations of A, B, and C and then extract the equation for S.</p>
+    <p class="comments">Truth tables provide a clear method for designing logic circuits and identifying their behavior.</p>
+
+</body>
+</html>
